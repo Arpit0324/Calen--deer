@@ -1,17 +1,17 @@
 :root {
-    --dark-body: #4d4c5a;
-    --dark-main: #141529;
+    --dark-body: #574c5a;
+    --dark-main: #251429;
     --dark-second: #79788c;
-    --dark-hover: #323048;
+    --dark-hover: #3b2b44;
     --dark-text: #f8fbff;
 
     --light-body: #f3f8fe;
     --light-main: #fdfdfd;
-    --light-second: #c3c2c8;
-    --light-hover: #edf0f5;
-    --light-text: #151426;
+    --light-second: #d9d6e9;
+    --light-hover: #f2edf5;
+    --light-text: #301a31;
 
-    --blue: #0000ff;
+    --blue: #c293e2;
     --white: #fff;
 
     --shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
@@ -43,7 +43,7 @@
 
 html,
 body {
-    height: 100vh;
+    height: 110vh;
     display: grid;
     place-items: center;
     font-family: var(--font-family);
@@ -69,7 +69,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
     color: var(--color-txt);
     padding: 10px;
@@ -100,7 +100,7 @@ body {
 }
 
 .calendar-days div {
-    width: 50px;
+    width: 55px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -108,7 +108,7 @@ body {
     padding: 5px;
     position: relative;
     cursor: pointer;
-    animation: to-top 1s forwards;
+    animation: to-top 2s backwards;
     /* border-radius: 50%; */
 }
 
@@ -117,7 +117,7 @@ body {
 }
 
 .calendar-days div:hover span {
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
 .calendar-days div span:nth-child(1),
@@ -165,7 +165,7 @@ body {
 }
 
 .calendar-days div:hover span:nth-child(2) {
-    transition-delay: 0.2s;
+    transition-delay: 0.4s;
 }
 
 .calendar-days div:hover span:nth-child(3) {
@@ -173,7 +173,7 @@ body {
 }
 
 .calendar-days div:hover span:nth-child(4) {
-    transition-delay: 0.6s;
+    transition-delay: 0.4s;
 }
 
 .calendar-days div.curr-date,
@@ -188,7 +188,7 @@ body {
 }
 
 .month-picker {
-    padding: 5px 10px;
+    padding: 7px 12px;
     border-radius: 10px;
     cursor: pointer;
 }
